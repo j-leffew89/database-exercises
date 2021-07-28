@@ -28,14 +28,14 @@ WHERE (first_name = 'Irena'
 SELECT *
 FROM employees
 WHERE last_name LIKE 'E%'
-OR last_name Like '%E';
+   OR last_name Like '%E';
 
 SELECT *
 FROM employees
 WHERE last_name LIKE 'E%'
-   AND last_name Like '%E';
+  AND last_name Like '%E';
 
 SELECT *
 FROM employees
 WHERE last_name LIKE '%q%'
-   AND last_name NOT Like '%qu%';
+  AND last_name NOT Like '%qu%';
