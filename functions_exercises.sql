@@ -19,3 +19,8 @@ WHERE DAY(birth_date) = 25
   AND hire_date > '1990-1-1'
 ORDER BY hire_date DESC ;
 
+SELECT hire_date, COUNT(*)
+FROM employees
+GROUP BY hire_date
+ORDER BY COUNT(*) DESC
+LIMIT 10;
