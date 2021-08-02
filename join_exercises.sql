@@ -6,7 +6,8 @@ FROM employees as e
               ON dm.emp_no = e.emp_no
          JOIN departments as d
               ON d.dept_no = dm.dept_no
-WHERE dm.to_date = '9999-01-01';
+WHERE dm.to_date = '9999-01-01'
+ORDER BY d.dept_no ASC;
 
 #---------------------------------------------------------------------------------------------------------------------
 
@@ -42,4 +43,4 @@ FROM employees as e
          JOIN departments as d
               ON d.dept_no = dm.dept_no
 WHERE dm.to_date = '9999-01-01'
-ORDER BY salary ASC;
+ORDER BY d.dept_name ASC;
