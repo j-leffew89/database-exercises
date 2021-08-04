@@ -17,4 +17,3 @@ CREATE TABLE movies
     rating INT NOT NULL,
     PRIMARY KEY (id)
 );
-
