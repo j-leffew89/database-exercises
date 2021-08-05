@@ -19,6 +19,3 @@ CREATE TABLE movies
 );
 
 DESCRIBE movies;
-
-
-
